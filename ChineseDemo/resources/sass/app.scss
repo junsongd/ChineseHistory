@@ -1,0 +1,66 @@
+// The following two lines import the default Sencha Touch theme. If you are building
+// a new theme, remove them and the add your own CSS on top of the base CSS (which
+// is already included in your app.json file).
+//@import 'sencha-touch/default';
+//@import 'sencha-touch/default/all';
+@import 'sencha-touch/cupertino';
+@import 'sencha-touch/cupertino/all';
+// Custom code goes here..
+
+// Examples of using the icon mixin:
+// @include icon('user');
+ 
+
+#homemenu{
+	width: 50%;
+    margin-top: 22%;
+
+}
+.homemenuitem{
+	margin-top : 20px;
+}
+      .example-desc {
+        margin:3px 0;
+        padding:5px;
+      }
+
+      #carousel {
+        width:960px;
+        border:1px solid #222;
+        height:300px;
+        position:relative;
+        clear:both;
+        overflow:hidden;
+        background:#FFF;
+      }
+      #carousel img {
+        visibility:hidden; /* hide images until carousel can handle them */
+        cursor:pointer; /* otherwise it's not as obvious items can be clicked */
+      }
+
+      .split-left {
+        width:450px;
+        float:left;
+      }
+      .split-right {
+        width:400px;
+        float:left;
+        margin-left:10px;
+      }
+      #callback-output {
+        height:250px;
+        overflow:scroll;
+      }
+      textarea#newoptions {
+        width:430px;
+      }
+
+.welcomeviewcontainer{
+  .x-panel-inner{ 
+    background-image: url("images/welcomebg.png");
+    background-repeat: no-repeat; 
+    background-size: cover;  
+  };
+ 
+
+}
