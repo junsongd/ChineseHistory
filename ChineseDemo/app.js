@@ -14,7 +14,17 @@ Ext.application({
     name: 'ChineseDemo',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
+        'Ext.List'
+    ],
+    
+    models :[
+     'ArtCharacterModel'
+
+    ],
+    stores :[
+
+       'ArtCharacterStore'
     ],
 
     views: [
@@ -25,7 +35,8 @@ Ext.application({
         'ChineseEvoluView',
         'ChineseEvoluSummaryView',
         'ChineseArtSummaryView',
-        'WelcomeView'
+        'WelcomeView',
+        'ArtChListView'
 
     ],
 
@@ -52,9 +63,12 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        // Ext.Viewport.add(Ext.create('ChineseDemo.view.Main'));
-        //Ext.Viewport.add(Ext.create('ChineseDemo.view.HomeView'));
+        // Ext.Viewport.add(Ext.create('ChineseDemo.view.ArtChListView'));
+         
         Ext.Viewport.add(Ext.create('ChineseDemo.view.WelcomeView'));
+          Ext.Viewport.add(Ext.create('ChineseDemo.view.HomeView'));
+ 
+     
     },
 
     onUpdated: function() {

@@ -6,7 +6,7 @@ Ext.define("ChineseDemo.view.HomeView", {
       width: '100%',
       showAnimation: {
                 type: 'slide',
-                duration: 200,
+                duration: 800,
                 direction:'left'
             }, 
       layout: 'fit',

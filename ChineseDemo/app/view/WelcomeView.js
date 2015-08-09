@@ -6,7 +6,7 @@ Ext.define("ChineseDemo.view.WelcomeView", {
       width: '100%',
       hideAnimation: {
             type: 'flip',
-            duration: 500,
+            duration: 1000,
             easing: 'ease-out'
         },  
       layout: 'fit',
@@ -20,10 +20,10 @@ Ext.define("ChineseDemo.view.WelcomeView", {
                                 element: 'element',
                                 event: 'tap',
                                 fn: function() {
-                                    setTimeout(function(){ 
-                                  
-                                         Ext.getCmp('welcomeview').hide();
-                                    },100);  
+                                   Ext.getCmp('welcomeview').hide();
+                                    setTimeout(function(){   
+                                         Ext.getCmp('homeview').show();
+                                    },1000);  
                                 }
                             }
                       ]    

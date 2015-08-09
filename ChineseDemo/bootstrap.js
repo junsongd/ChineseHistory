@@ -36,6 +36,9 @@ Ext.Loader.addClassPathMappings({
 });
 
 Ext.ClassManager.addNameAlternateMappings({
+  "ChineseDemo.model.ArtCharacterModel": [],
+  "ChineseDemo.store.ArtCharacterStore": [],
+  "ChineseDemo.view.ArtChListView": [],
   "ChineseDemo.view.ChineseArtSummaryView": [],
   "ChineseDemo.view.ChineseArtView": [],
   "ChineseDemo.view.ChineseEvoluSummaryView": [],
@@ -667,6 +670,15 @@ Ext.ClassManager.addNameAlternateMappings({
 });
 
 Ext.ClassManager.addNameAliasMappings({
+  "ChineseDemo.model.ArtCharacterModel": [
+    "widget.artcharactermodel"
+  ],
+  "ChineseDemo.store.ArtCharacterStore": [
+    "store.artcharacterstore"
+  ],
+  "ChineseDemo.view.ArtChListView": [
+    "widget.artchlistview"
+  ],
   "ChineseDemo.view.ChineseArtSummaryView": [
     "widget.chineseartsummaryview"
   ],

@@ -12,20 +12,7 @@ Ext.define("ChineseDemo.view.ChineseEvoluSummaryView", {
       layout: 'fit',
       items: [ 
           
-          {
-                 xtype:'panel',
-                 id: "chineseimagesview", 
-                 items : [ 
-                    { 
-                        xtype:'panel',
-                        id: "chineseimagesview", 
-                        html : '',
-               
-
-                    } 
-                ],
-                
-          }  
+           
       ],
       
       

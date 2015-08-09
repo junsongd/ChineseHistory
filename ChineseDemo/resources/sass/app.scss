@@ -9,7 +9,17 @@
 
 // Examples of using the icon mixin:
 // @include icon('user');
- 
+/*** color ****/
+$menu-btn-color: #000000;
+$app-title-color: #000000;
+
+/*** font size ****/ 
+$title-font-size: 15px;
+$btn-font-size: 20px;
+$menu-font-size: 23px;
+$toolbar-bg : #fff;
+
+
 
 #homemenu{
 	width: 50%;
@@ -60,7 +70,140 @@
     background-image: url("images/welcomebg.png");
     background-repeat: no-repeat; 
     background-size: cover;  
-  };
+  }; 
+}
+
+#homeviewcontainer{
+     
+    background-image: url("images/homebg.png");
+    background-repeat: no-repeat; 
+    background-size: cover;  
+  
+}
+
+.homemenuitem{ 
+      width: 410px;
+    height: 92px;
+    border: none; 
+}
+
+ .history{
+             
+       
+            background-image: url("images/chinese_history_btn.png");
+           background-repeat: no-repeat;
+           background-size: cover;
+           margin-top: 156px; 
+
+    }
+
+ .evolu{
+             
+        background-image: url("images/chinese_evolu_btn.png");
+        background-repeat: no-repeat; 
+        background-size: cover;  
+        margin-left : 40px;
+
+    }
+  .art{
+             
+        background-image: url("images/chinese_art_btn.png");
+        background-repeat: no-repeat; 
+        background-size: cover;  
+         margin-left : 80px;
+
+  }
+
+  #art_summary{
+
+       width: 30%;
+    text-align: right;
+    padding: 30px;
+    font-size: 30px
+
+  }
+
+    #art_summary{
+
+       width: 30%;
+    text-align: right;
+    padding: 30px;
+    font-size: 30px
+
+  }
+
+#art_list{
+  
+     width: 30%;
+    margin-top: 30px;
+    font-size: 30px;
+}
+.art_list_item{
+
+    border: none;
+    margin-top: 30px; 
+    .x-button-label{  
+      color: $menu-btn-color;
+    }
+} 
  
 
+
+.dataview-item{
+   width : 33.33%;
+   height : 50%;
+   border-right: 1px solid #000;
+   border-bottom: 5px solid #59535E;
+   float:left;   
+   padding:2px;
 }
+ 
+.arHeadline{
+    font-size: 16px;
+    font-weight:bold;
+    overflow:hidden;
+    font-family: 'Museo Sans';
+    color: #66ab16;
+}
+ 
+.arbyline{
+    font-size:10px;
+    font-style:italic;
+    font-family: 'Museo Sans';
+}
+ 
+.arcontent{
+    font-size:12px;
+    font-family: 'Museo Sans';
+    margin: 2px;
+    overflow: hidden;
+}
+ 
+.artch-item{
+      
+    width: 150px;
+    height: 200px;
+    padding: 5px;
+    img {
+
+       width: 100%; 
+       height :100%
+    }
+}
+ .x-carousel-item  {
+    
+    width: 42%;
+    height: 100%;
+
+}
+    .x-list .x-list-inner {
+                width: auto;
+            }
+            .x-list-container {
+                white-space: nowrap;
+            }
+            .x-list-item {
+                display: inline-block;
+            }
+ 
+

@@ -20,9 +20,9 @@ Ext.define("ChineseDemo.view.HomeViewContainer", {
 
                          {
                             xtype: 'button',
-                            cls :"homemenuitem",
+                            cls :"homemenuitem history",
                             itemId: ' ', 
-                            text: '汉字的故事',
+                            //text: '汉字的故事',
                             listeners :{ 
                                        tap: function(){
                                              Ext.getCmp('home_navigation_view').push(
@@ -36,9 +36,9 @@ Ext.define("ChineseDemo.view.HomeViewContainer", {
                          },
                          {
                             xtype: 'button',
-                            cls :"homemenuitem",
+                            cls :"homemenuitem evolu",
                             itemId: ' ', 
-                            text: '汉字的演变',
+                            //text: '汉字的演变',
                             listeners :{
 
                                      tap: function(){
@@ -54,9 +54,9 @@ Ext.define("ChineseDemo.view.HomeViewContainer", {
                          },  
                          {
                             xtype: 'button',
-                            cls :"homemenuitem",
+                            cls :"homemenuitem art",
                             itemId: ' ', 
-                            text: '汉字的艺术',
+                           // text: '汉字的艺术',
                             listeners :{
 
                                       tap: function(){

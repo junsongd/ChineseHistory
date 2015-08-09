@@ -9,21 +9,83 @@ Ext.define("ChineseDemo.view.ChineseArtSummaryView", {
                 duration: 200,
                 direction:'left'
             }, 
-      layout: 'fit',
+      layout: 'hbox',
       items: [ 
           
           {
                  xtype:'panel',
-                 id: "chineseimagesview", 
-                 items : [ 
-                    { 
-                        xtype:'panel',
-                        id: "chineseimagesview", 
-                        html : '',
-               
+                 id: "art_summary", 
+                 html : "目录" 
+                
+          },
+          {
+                 xtype:'panel',
+                 id: "art_list",
+                 layout : 'vbox',
+                 items : [
 
-                    } 
-                ],
+                     {
+                        xtype : 'button',
+                        cls : "art_list_item", 
+                        html : "汉字书法" ,
+                        listeners: {
+                              tap: function() {
+                               
+                                          Ext.getCmp('home_navigation_view').push(
+                                               {
+                                                xtype: 'artchlistview',
+                                                title: "汉字书法" 
+                                               }
+                                            );  
+ 
+                               }
+                          }
+
+                     },
+
+                     {
+                        xtype : 'button',
+                        cls : "art_list_item",  
+                        html : "名家示范",
+                          listeners: {
+                              tap: function() {
+                                
+                                      Ext.getCmp('home_navigation_view').push(
+                                               {
+                                                xtype: 'artchlistview',
+                                                title: "名家示范" 
+                                               }
+                                            ); 
+ 
+                               }
+                          }
+
+
+                     },
+
+                     {
+                        xtype : 'button',
+                        cls : "art_list_item",  
+                        html : "名帖鉴赏",
+                          listeners: {
+                              tap: function() {
+                                
+                                      Ext.getCmp('home_navigation_view').push(
+                                               {
+                                                xtype: 'artchlistview',
+                                                title: "名帖鉴赏" 
+                                               }
+                                            ); 
+ 
+                               }
+                          }
+
+
+                     }, 
+
+
+                 ]
+                 
                 
           }  
       ],
